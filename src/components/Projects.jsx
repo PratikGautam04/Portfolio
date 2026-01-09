@@ -41,8 +41,7 @@ const projectsData = [
     description:
       "A personal portfolio website showcasing skills, experience, projects, and education.",
     tech: "React.js, CSS, Vite",
-    live: "#",
-    github: "#",
+    github: "https://github.com/PratikGautam04/Portfolio",
   },
 ];
 
