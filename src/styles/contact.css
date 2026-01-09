@@ -1,0 +1,144 @@
+/* 
+  CONTACT SECTION
+ */
+
+.contact-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e1b4b, #020617);
+  color: #e5e7eb;
+}
+
+.contact-title {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #cbd5f5;
+  margin-bottom: 60px;
+}
+
+/* 
+   CARD
+ */
+
+.contact-card {
+  max-width: 420px;
+  margin: auto;
+  background: rgba(15, 12, 30, 0.95);
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  transition: 0.4s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 16px 40px rgba(168, 85, 247, 0.35);
+  transform: translateY(-4px);
+}
+
+.contact-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+/* 
+   FORM
+ */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #020617;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Focus glow */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
+
+/* BUTTON*/
+
+/* Button uses global .btn styles */
+
+/* REVEAL ANIMATION*/
+
+.reveal {
+  animation: contactReveal 0.9s ease forwards;
+}
+
+@keyframes contactReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 
+   RESPONSIVE
+ */
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 34px;
+  }
+
+  .contact-section {
+    padding: 80px 20px;
+  }
+}
+
+/* Success Message */
+.contact-success {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #22c55e;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

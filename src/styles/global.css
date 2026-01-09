@@ -1,0 +1,109 @@
+/* 
+   RESET & BASE
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #2b1055, #05060a);
+  color: #eaeaea;
+  overflow-x: hidden; /* 🔑 prevent horizontal scroll */
+}
+
+/* 
+   SECTIONS
+ */
+
+section {
+  padding: 90px 20px;
+}
+
+section > * {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* 
+   HEADINGS
+ */
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 38px;
+}
+
+/* 
+   BUTTONS
+ */
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* 
+   RESPONSIVE TYPOGRAPHY
+ */
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 34px;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 16px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 11px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 60px 14px;
+  }
+
+  h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}

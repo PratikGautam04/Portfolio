@@ -1,0 +1,170 @@
+/* 
+   NAVBAR (DESKTOP)
+ */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 6, 25, 0.75);
+  backdrop-filter: blur(14px);
+  padding: 18px 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: #a855f7;
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
+
+/* Nav Links */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+  transition: 0.3s ease;
+}
+
+/* Animated underline */
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #a855f7, #22d3ee);
+  transition: width 0.3s ease;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+}
+
+.nav ul li a:hover {
+  color: #a855f7;
+}
+
+/* GitHub Button */
+.git {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #a855f7;
+  color: #a855f7;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.git:hover {
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
+  transform: translateY(-2px);
+}
+
+/* 
+   HAMBURGER ICON
+ */
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.menu-toggle.rotate {
+  transform: rotate(90deg);
+}
+
+/* 
+   RESPONSIVE (TABLET & MOBILE)
+ */
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 16px 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav ul {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+
+    background: rgba(10, 6, 25, 0.95);
+    backdrop-filter: blur(14px);
+    border-radius: 14px;
+
+    flex-direction: column;
+    gap: 20px;
+    padding: 22px;
+
+    display: none;
+
+    animation: fadeSlide 0.3s ease;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .git {
+    text-align: center;
+  }
+}
+
+/* 
+   SMALL MOBILE
+ */
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav {
+    padding: 14px 20px;
+  }
+}
+
+/* 
+   MOBILE MENU ANIMATION
+ */
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
