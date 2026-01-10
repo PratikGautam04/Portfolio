@@ -19,7 +19,6 @@ import {
   SiNetlify,
   SiVercel,
   SiPostman,
-  SiFigma
 } from "react-icons/si";
 
 export default function Skills() {
@@ -65,7 +64,6 @@ export default function Skills() {
             <Skill icon={<SiVercel />} name="Vercel" />
             <Skill icon={<FaCode />} name="VS Code" />
             <Skill icon={<SiPostman />} name="Postman" />
-            <Skill icon={<SiFigma />} name="Figma" />
           </div>
         </div>
       </div>
