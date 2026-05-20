@@ -11,15 +11,7 @@ const projectsData = [
     live: "https://pratikgautam04.github.io/UTS-Ticket-System/",
     github: "https://github.com/PratikGautam04/UTS-Ticket-System",
   },
-  // {
-  //   title: "Mutual Fund SIP Calculator",
-  //   description:
-  //     "A responsive SIP calculator that helps users calculate monthly investments and expected returns.",
-  //   tech: "React.js, JavaScript, CSS",
-  //   live: "#",
-  //   github: "#",
-  // },
-
+ 
   {
   title: "Personal Finance Manager",
   description:
